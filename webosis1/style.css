@@ -1,0 +1,491 @@
+.home-pasive {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .home-pasive .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1440px;
+    height: 2325px;
+    position: relative;
+  }
+  
+  .home-pasive .frame {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 1234px;
+    left: 536px;
+  }
+  
+  .home-pasive .button {
+    all: unset;
+    box-sizing: border-box;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 53px;
+    background-color: #0d2034;
+    border-radius: 16px;
+  }
+  
+  .home-pasive .text-wrapper {
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    width: 305px;
+    padding: 10px;
+    height: 53px;
+    border-radius: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .home-pasive .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 2045px;
+    left: 536px;
+  }
+  
+  .home-pasive .kontak-email-osis-wrapper {
+    display: flex;
+    width: 1447px;
+    height: 183px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 30px;
+    position: absolute;
+    top: 2142px;
+    left: 0;
+    background-color: #323d3f;
+  }
+  
+  .home-pasive .kontak-email-osis {
+    position: relative;
+    width: 1379px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-pasive .span {
+    font-weight: 700;
+  }
+  
+  .home-pasive .text-wrapper-2 {
+    font-weight: 500;
+  }
+  
+  .home-pasive .frame-2 {
+    position: absolute;
+    width: 1440px;
+    height: 129px;
+    top: 0;
+    left: 0;
+  }
+  
+  .home-pasive .img {
+    position: absolute;
+    width: 121px;
+    height: 67px;
+    top: 29px;
+    left: 37px;
+  }
+  
+  .home-pasive .navbar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    position: absolute;
+    top: 47px;
+    left: 380px;
+  }
+  
+  .home-pasive .text-wrapper-3 {
+    width: 79px;
+    color: #0043f1;
+    position: relative;
+    height: 35px;
+    margin-top: -1.00px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-pasive .text-wrapper-4 {
+    position: relative;
+    width: 180px;
+    height: 35px;
+    margin-top: -1.00px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-pasive .text-wrapper-5 {
+    position: relative;
+    width: 212px;
+    height: 35px;
+    margin-top: -1.00px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-pasive .text-wrapper-6 {
+    width: 102px;
+    color: #000000;
+    position: relative;
+    height: 35px;
+    margin-top: -1.00px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-pasive .text-wrapper-7 {
+    position: absolute;
+    width: 683px;
+    height: 60px;
+    top: 722px;
+    left: 361px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 800;
+    color: #042545;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-pasive .text-wrapper-8 {
+    position: absolute;
+    width: 683px;
+    height: 60px;
+    top: 1382px;
+    left: 358px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 800;
+    color: #042545;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-pasive .group {
+    position: absolute;
+    width: 1394px;
+    height: 539px;
+    top: 145px;
+    left: 21px;
+  }
+  
+  .home-pasive .overlap-group {
+    position: relative;
+    height: 539px;
+  }
+  
+  .home-pasive .rectangle-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1394px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+  
+  .home-pasive .rectangle {
+    position: relative;
+    width: 1374px;
+    height: 517.5px;
+  }
+  
+  .home-pasive .frame-3 {
+    position: absolute;
+    width: 715px;
+    height: 60px;
+    top: 0;
+    left: 35px;
+  }
+  
+  .home-pasive .p {
+    display: flex;
+    width: 715px;
+    height: 37px;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: -21px;
+    color: #052545;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .home-pasive .text-wrapper-9 {
+    position: absolute;
+    width: 715px;
+    height: 60px;
+    top: -1px;
+    left: 0;
+    font-family: "Poppins", Helvetica;
+    font-weight: 800;
+    color: #042545;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-pasive .frame-4 {
+    position: absolute;
+    width: 500px;
+    height: 310px;
+    top: 83px;
+    left: 851px;
+  }
+  
+  .home-pasive .div-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 359px;
+    left: 41px;
+  }
+  
+  .home-pasive .component {
+    position: absolute;
+    width: 264px;
+    height: 415px;
+    top: 795px;
+    left: 75px;
+  }
+  
+  .home-pasive .component-2 {
+    position: absolute;
+    width: 264px;
+    height: 415px;
+    top: 795px;
+    left: 411px;
+  }
+  
+  .home-pasive .component-3 {
+    position: absolute;
+    width: 264px;
+    height: 415px;
+    top: 795px;
+    left: 749px;
+  }
+  
+  .home-pasive .component-4 {
+    position: absolute;
+    width: 248px;
+    height: 395px;
+    top: 805px;
+    left: 1095px;
+  }
+  
+  .home-pasive .frame-5 {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    align-items: flex-start;
+    gap: 10px;
+    position: absolute;
+    top: 1454px;
+    left: 0;
+    overflow: hidden;
+    box-shadow: inset 0px 4px 42.7px #000000;
+  }
+  
+  .home-pasive .group-2 {
+    position: relative;
+    width: 1440px;
+    height: 553px;
+  }
+  
+  .home-pasive .frame-6 {
+    display: flex;
+    width: 1106px;
+    align-items: center;
+    gap: 34px;
+    padding: 14px 0px;
+    position: absolute;
+    top: 55px;
+    left: 167px;
+    overflow-x: scroll;
+  }
+  
+  .home-pasive .frame-6::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+  
+  .home-pasive .div-2 {
+    position: relative;
+    width: 246px;
+    height: 407px;
+  }
+  
+  .home-pasive .overlap-group-wrapper {
+    position: absolute;
+    width: 250px;
+    height: 407px;
+    top: 0;
+    left: 0;
+  }
+  
+  .home-pasive .rectangle-2 {
+    position: absolute;
+    width: 246px;
+    height: 391px;
+    top: 16px;
+    left: 0;
+  }
+  
+  .home-pasive .rectangle-3 {
+    position: absolute;
+    width: 217px;
+    height: 132px;
+    top: 53px;
+    left: 14px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  
+  .home-pasive .lorem-ipsum-dolor {
+    position: absolute;
+    width: 217px;
+    top: 224px;
+    left: 14px;
+    font-family: "Rowdies", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 11px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-pasive .text-wrapper-10 {
+    color: #ffcc60;
+  }
+  
+  .home-pasive .text-wrapper-11 {
+    color: #000000;
+  }
+  
+  .home-pasive .desain-tanpa-judul {
+    position: absolute;
+    width: 29px;
+    height: 46px;
+    top: 0;
+    left: 109px;
+    object-fit: cover;
+  }
+  
+  .home-pasive .text-wrapper-12 {
+    position: absolute;
+    width: 217px;
+    height: 24px;
+    top: 195px;
+    left: 14px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 800;
+    color: #042545;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-pasive .icon-wrapper {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    top: 315px;
+    left: 160px;
+    background-color: #d5a521;
+    border-radius: 43px;
+  }
+  
+  .home-pasive .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 18px;
+    left: 18px;
+  }
+  
+  .home-pasive .group-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1454px;
+    height: 548px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .home-pasive .group-3 {
+    position: absolute;
+    right: -14px;
+    bottom: -3px;
+    align-self: stretch;
+    width: 1473px;
+    height: 562px;;
+    object-fit: cover;
+  }
