@@ -99,8 +99,6 @@
   @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
   h2, h3 { color: #00fff2; font-size: 0.9rem; }
   p { font-size: 0.65rem; line-height: 1.4; }
-  .gallery { width: 45%; margin: 5px; border-radius: 8px; border: 1px solid #00ffcc44; }
-  #gallery { display: flex; flex-wrap: wrap; justify-content: center; }
 </style>
 </head>
 <body>
@@ -110,9 +108,25 @@
     <p>ACCESS POINT // SOLVE TO ENTER</p>
     <div id="math">
       $$
-      (2P \times 3R) + (4A \div 2) + (2D \times 1) + (3I - 2T) + (M + 4H + K)
+      \begin{aligned}
+      (1)&\quad 6PR + 2A + 2D + (3I - 2T) + (M + 4H + K) = 1781, \\
+      (2)&\quad P\cdot R = 288, \\
+      (3)&\quad P + R + A = 35, \\
+      (4)&\quad D + I + T = 33, \\
+      (5)&\quad M + H + K = 32, \\
+      (6)&\quad P^2 + R^2 = 580, \\
+      (7)&\quad R - P = 2, \\
+      (8)&\quad \gcd(P,R) = 2, \\
+      (9)&\quad \operatorname{lcm}(P,R) = 144, \\
+      (10)&\quad A^3 = 1, \\
+      (11)&\quad 2D + T = 28, \\
+      (12)&\quad T\cdot I = 180, \\
+      (13)&\quad M\cdot K = 143, \\
+      (14)&\quad H = 2^3, \\
+      (15)&\quad A + D^2 = 17.
+      \end{aligned}
       $$
-      <p>Temukan hasil akhir dari ekspresi di atas untuk membuka portal.</p>
+      <p>Temukan nilai integer untuk setiap variabel (1–26), ubah ke huruf alfabet, lalu masukkan hasil akhir di bawah.</p>
     </div>
     <input type="text" id="codeInput" placeholder="ENTER DECRYPTED CODE">
     <button onclick="verify()">VERIFY</button>
@@ -123,7 +137,7 @@
     <h2>WELCOME, AGENT</h2>
     <p>Clearance verified. You have unlocked Level One of the protocol.</p>
 
-    <section id="owlArchive" class="content">
+    <div class="section">
       <h2>🦉 OWL ARCHIVES</h2>
       <p>Visual database dari riset dan konservasi burung hantu (contoh: Owl Research Institute). Semua gambar dikurasi untuk memberikan wawasan misteri dan kebijaksanaan.</p>
       <div id="gallery">
@@ -136,23 +150,41 @@
         <img class="gallery" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/School_corridor_in_Bandung.jpg" alt="Korridor Sekolah">
         <img class="gallery" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Library_Indonesia.jpg" alt="Perpustakaan Sekolah">
       </div>
-    </section>
+    </div>
+
+    <div class="section">
+      <h3>💡 LIGHT NETWORK</h3>
+      <p>A chamber of luminescence designed to illuminate unseen connections. Enter when cognition aligns.</p>
+    </div>
+
+    <div class="section">
+      <h3>🧩 DECODE MISSION</h3>
+      <p>Input hidden sequences to reveal deeper archives.</p>
+      <input type="text" id="missionInput" placeholder="Enter Sequence" />
+      <button onclick="decodeMission()">DECODE</button>
+      <p id="decodeOutput"></p>
+    </div>
   </div>
 
 <script>
 function verify(){
   const input = document.getElementById('codeInput').value.trim().toUpperCase();
   const status = document.getElementById('status');
-  console.log('Verifying input:', input);
   if(input === 'P2R4A2D2ITMHK'){
-    console.log('Access granted');
     status.textContent = 'ACCESS GRANTED';
     document.getElementById('gate').classList.add('hidden');
     document.getElementById('mainContent').classList.remove('hidden');
   } else {
-    console.log('Access denied');
     status.textContent = 'ACCESS DENIED // INVALID SEQUENCE';
   }
+}
+
+function decodeMission(){
+  const val = document.getElementById('missionInput').value.trim();
+  const out = document.getElementById('decodeOutput');
+  if(!val){ out.textContent='// EMPTY INPUT'; return; }
+  const result = val.split('').reverse().join('');
+  out.textContent = 'Decoded: '+result;
 }
 </script>
 </body>
