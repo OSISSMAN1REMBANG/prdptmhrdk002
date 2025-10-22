@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AGENT PROTOCOL — ACCESS TERMINAL</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  body {
+    background: radial-gradient(circle at center, #000 0%, #050505 100%);
+    color: #00ffcc;
+    font-family: 'Press Start 2P', monospace;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .glitch {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+    animation: flicker 2s infinite;
+    text-transform: uppercase;
+  }
+  .glitch::before, .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: #ff004c;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+  .glitch::before {
+    animation: glitchTop 1s infinite linear alternate-reverse;
+  }
+  .glitch::after {
+    animation: glitchBottom 1.3s infinite linear alternate-reverse;
+    color: #00fff2;
+  }
+  @keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+    20%, 24%, 55% { opacity: 0.4; }
+  }
+  @keyframes glitchTop {
+    0% { clip: rect(0,9999px,0,0); }
+    50% { clip: rect(0,9999px,30px,0); transform: translate(-5px, -5px); }
+    100% { clip: rect(0,9999px,10px,0); transform: translate(3px,3px); }
+  }
+  @keyframes glitchBottom {
+    0% { clip: rect(50px,9999px,90px,0); }
+    50% { clip: rect(60px,9999px,80px,0); transform: translate(5px,5px); }
+    100% { clip: rect(70px,9999px,100px,0); transform: translate(-3px,-3px); }
+  }
+
+  .terminal {
+    width: 80%;
+    max-width: 700px;
+    margin: 40px auto;
+    border: 2px solid #00ffcc;
+    border-radius: 8px;
+    padding: 20px;
+    background: rgba(0, 20, 20, 0.15);
+    box-shadow: 0 0 15px #00ffcc33;
+  }
+  .terminal input, .terminal button {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #00ffcc;
+    color: #00ffcc;
+    font-size: 0.8rem;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+  }
+  .terminal button {
+    border: 1px solid #00ffcc;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.7rem;
+  }
+  .terminal button:hover { background: #00ffcc22; }
+  .hidden { display: none; }
+
+  .content {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00ffcc33;
+    animation: fadeIn 2s ease-in-out;
+  }
+  @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+  h2, h3 { color: #00fff2; font-size: 0.9rem; }
+  p { font-size: 0.65rem; line-height: 1.4; }
+  .gallery { width: 45%; margin: 5px; border-radius: 8px; border: 1px solid #00ffcc44; }
+  #gallery { display: flex; flex-wrap: wrap; justify-content: center; }
+</style>
+</head>
+<body>
+  <div class="glitch" data-text="AGENT PROTOCOL">AGENT PROTOCOL</div>
+
+  <div class="terminal" id="gate">
+    <p>ACCESS POINT // SOLVE TO ENTER</p>
+    <div id="math">
+      $$
+      (2P \times 3R) + (4A \div 2) + (2D \times 1) + (3I - 2T) + (M + 4H + K)
+      $$
+      <p>Temukan hasil akhir dari ekspresi di atas untuk membuka portal.</p>
+    </div>
+    <input type="text" id="codeInput" placeholder="ENTER DECRYPTED CODE">
+    <button onclick="verify()">VERIFY</button>
+    <p id="status"></p>
+  </div>
+
+  <div id="mainContent" class="hidden content">
+    <h2>WELCOME, AGENT</h2>
+    <p>Clearance verified. You have unlocked Level One of the protocol.</p>
+
+    <section id="owlArchive" class="content">
+      <h2>🦉 OWL ARCHIVES</h2>
+      <p>Visual database dari riset dan konservasi burung hantu (contoh: Owl Research Institute). Semua gambar dikurasi untuk memberikan wawasan misteri dan kebijaksanaan.</p>
+      <div id="gallery">
+        <img class="gallery" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Barn_owl_%28Tyto_alba%29_2.jpg" alt="Barn Owl">
+        <img class="gallery" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Great_Horned_Owl_06.jpg" alt="Great Horned Owl">
+        <img class="gallery" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Snowy_Owl_%28Bubo_scandiacus%29.jpg" alt="Snowy Owl">
+        <img class="gallery" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Eurasian_eagle-owl_%28Bubo_bubo%29_2.jpg" alt="Eurasian Eagle Owl">
+        <img class="gallery" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/School_building_in_Jakarta.jpg" alt="Gedung Sekolah">
+        <img class="gallery" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Classroom_in_Indonesia.jpg" alt="Kelas Sekolah">
+        <img class="gallery" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/School_corridor_in_Bandung.jpg" alt="Korridor Sekolah">
+        <img class="gallery" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Library_Indonesia.jpg" alt="Perpustakaan Sekolah">
+      </div>
+    </section>
+  </div>
+
+<script>
+function verify(){
+  const input = document.getElementById('codeInput').value.trim().toUpperCase();
+  const status = document.getElementById('status');
+  console.log('Verifying input:', input);
+  if(input === 'P2R4A2D2ITMHK'){
+    console.log('Access granted');
+    status.textContent = 'ACCESS GRANTED';
+    document.getElementById('gate').classList.add('hidden');
+    document.getElementById('mainContent').classList.remove('hidden');
+  } else {
+    console.log('Access denied');
+    status.textContent = 'ACCESS DENIED // INVALID SEQUENCE';
+  }
+}
+</script>
+</body>
+</html>
