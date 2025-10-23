@@ -106,28 +106,29 @@
 
   <div class="terminal" id="gate">
     <p>ACCESS POINT // SOLVE TO ENTER</p>
-    <div id="math">
-      $$
-      \begin{aligned}
-      (1)&\quad 6PR + 2A + 2D + (3I - 2T) + (M + 4H + K) = 1781, \\
-      (2)&\quad P\cdot R = 288, \\
-      (3)&\quad P + R + A = 35, \\
-      (4)&\quad D + I + T = 33, \\
-      (5)&\quad M + H + K = 32, \\
-      (6)&\quad P^2 + R^2 = 580, \\
-      (7)&\quad R - P = 2, \\
-      (8)&\quad \gcd(P,R) = 2, \\
-      (9)&\quad \operatorname{lcm}(P,R) = 144, \\
-      (10)&\quad A^3 = 1, \\
-      (11)&\quad 2D + T = 28, \\
-      (12)&\quad T\cdot I = 180, \\
-      (13)&\quad M\cdot K = 143, \\
-      (14)&\quad H = 2^3, \\
-      (15)&\quad A + D^2 = 17.
-      \end{aligned}
-      $$
-      <p>Temukan nilai integer untuk setiap variabel (1–26), ubah ke huruf alfabet, lalu masukkan hasil akhir di bawah.</p>
-    </div>
+    <div id="math" aria-live="polite">
+        <div style="text-align:left;">
+          $$\begin{aligned}
+            (1)\;& 6PR + 2A + 2D + (3I - 2T) + (M + 4H + K) = 64, \\
+            (2)\;& P\cdot R = 8, \\
+            (3)\;& P + R + A = 7, \\
+            (4)\;& D + I + T = 5, \\
+            (5)\;& M + H + K = 3, \\
+            (6)\;& P^{2} + R^{2} = 20, \\
+            (7)\;& R - P = 2, \\
+            (8)\;& \gcd(P,R) = 2, \\
+            (9)\;& \operatorname{lcm}(P,R) = 4, \\
+            (10)\;& A^{3} = 1, \\
+            (11)\;& 2D + T = 5, \\
+            (12)\;& T\cdot I = 2, \\
+            (13)\;& M\cdot K = 1, \\
+            (14)\;& H = 1, \\
+            (15)\;& A + D^{2} = 5.
+          \end{aligned}$$
+        </div>
+
+        <p>Temukan nilai integer untuk setiap variabel (1–26), ubah ke huruf alfabet jika perlu, lalu masukkan hasil akhir di bawah. <strong>Aturan kode:</strong> tulis kode dalam format seperti contoh (mis. <code>2ADM atau ADAM </code>). Jika variabel tidak diberi angka di kode, anggap nilainya = 1.</p>
+      </div>
     <input type="text" id="codeInput" placeholder="ENTER DECRYPTED CODE">
     <button onclick="verify()">VERIFY</button>
     <p id="status"></p>
